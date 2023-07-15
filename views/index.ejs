@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+    <div class="side-div">
+        <h1>Easy Buy</h1>
+            <div class="link"><a href="/"><i class="fa-solid fa-house"></i>  Home</a></div>
+            <div class="link"><a href="/create"><i class="fa-solid fa-plus"></i>  Create</a></div>
+            <div class="link"><a href="/edit"><i class="fa-solid fa-pen-to-square"></i> Update/Delete</a></div>
+    </div>
+
+    <div class="main-div">
+
+    <div class="flex-container">
+        <%for(i=(load.length-1);i>=0;i--){%>
+        <div class="flex-box">
+            <img src="ecom.jpg" />
+            <h3><%=load[i].NAME%></h3>
+            <small><%=load[i].PRICE%>$</small>
+            <p>Available: <%=load[i].AVAILABLE%></p>
+        </div>
+        <%}%>
+    </div>
+
+    </div>
+
+
+<script src="https://kit.fontawesome.com/8522f483a0.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+    <div class="side-div">
+        <h1>Easy Buy</h1>
+            <div class="link"><a href="/"><i class="fa-solid fa-house"></i>  Home</a></div>
+            <div class="link"><a href="/create"><i class="fa-solid fa-plus"></i>  Create</a></div>
+            <div class="link"><a href="#"><i class="fa-solid fa-pen-to-square"></i> Update/Delete</a></div>
+    </div>
+
+    <div class="main-div">
+        <h2><%=message%></h2>
+        <form id="vis" action="/create" method="post">
+            <p>Product Name</p>
+            <input type="text" name="name" autocomplete="off" required />
+            <p>Price</p>
+            <input type="text" name="price" autocomplete="off" required />
+            <p>Available</p>
+            <input type="text" name="available" autocomplete="off" required /><br>
+            <button type="submit">Add product</button>
+        </form>
+    </div>
+
+
+<script src="https://kit.fontawesome.com/8522f483a0.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    box-sizing: border-box;
+ }
+
+ nav {
+    background-color: #f2f2f2;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  nav ul li a:hover {
+    background-color: #ddd;
+  }
+
+ .side-div{
+    float: left;
+    width: 250px;
+    height: 650px;
+    margin-top: 70px;
+    background-color: #fff;
+    position: fixed;
+}
+
+.side-div h1{
+    margin-bottom: 50px;
+}
+
+.link{
+    padding: 10px;
+    height: 40px;
+    width: 100%;
+    background: whitesmoke;
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
+
+.link:hover{
+    background: rgb(219, 219, 219);
+}
+
+.link a{
+    text-decoration: none;
+    color: black;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.main-div{
+    float: right;
+    width: 1270px;
+    margin-top: 70px;
+}
+
+ .flex-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+ }
+
+ .flex-box{
+    width: 23%;
+    min-height: 290px;
+    background: white;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
+    cursor: pointer;
+ }
+
+ .flex-box img{
+    width: 95%;
+    height: auto;
+    margin-bottom: 15px;
+ }
+
+ .flex-box button{
+    margin-left: 10px;
+    margin-right: 10px;
+ }
+
+
+ #vis{
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 200px;
+    padding-top: 35px;
+    box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
+ }
+
+ #vis input{
+    padding: 5px;
+ }
+
+ #vis button{
+    color: white;
+    background: black;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+ }
+
+ .main-div h2{
+    margin-left: 150px;
+ }
+
+ #update{
+    color: white;
+    background: blue;
+    border: none;
+    padding: 3px;
+    cursor: pointer;
+ }
+
+ #delete{
+    color: white;
+    background: red;
+    border: none;
+    padding: 3px;
+    cursor: pointer;
+ }
+
+ .sd{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    height: 40px;
+    width: 450px;
+    box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
+    border-radius: 20px;
+    padding-left: 15px;
+ }
+
+ .sd input{
+    height: 40px;
+    width: 344px;
+    border: none;
+ }
+
+ .sd input:focus{
+    outline: none;
+ }
+
+ .sd button{
+    color: white;
+    font-weight: 600;
+    background: black;
+    padding: 9px;
+    border: none;
+    border-radius: 20px;
+ }
+
+ #edit{
+    border: none;
+    background: none;
+    margin-left: 260px;
+    cursor: pointer;
+ }
+
+ .disappear{
+    display: none;
+ }
+
+ .appear{
+    display: inline;
+ }
